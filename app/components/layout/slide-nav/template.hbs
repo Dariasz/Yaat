@@ -1,19 +1,14 @@
-
-
   {{#paper-sidenav class="md-whiteframe-z2" name="left" open=leftSideBarOpen onToggle=(action (mut leftSideBarOpen)) }}
-    {{#paper-toolbar as |toolbar|}}
-      {{#paper-toolbar-tools}}Left Sidenav{{/paper-toolbar-tools}}
-    {{/paper-toolbar}}
 
-    {{#paper-content padding=true}}
-    <div class="layout-column">
-       <div class="flex">
-           here will be dragons :-)
-       </div>
-    </div>
-    {{/paper-content}}
+      {{#paper-toolbar as |toolbar|}}
+        {{#paper-toolbar-tools}}Categories{{/paper-toolbar-tools}}
+      {{/paper-toolbar}}
+
+      {{#paper-content padding=true}}
+        <div class="layout-column">
+           <div class="flex">
+               here will be dragons :-)
+           </div>
+        </div>
+      {{/paper-content}}
   {{/paper-sidenav}}
-
-  {{#paper-card-content class="flex" }}
-
-  {{/paper-card-content}}

@@ -1,0 +1,22 @@
+<div class="layout-row layout-wrap flex" >
+
+  <div class="flex">
+
+      {{#each model as  |user|}}
+
+        <div class="flex sm-50">
+      <ul>
+        <li>
+          {{#link-to 'users.user' user}}
+        {{user.name}}
+            {{/link-to}}
+            <img src="{{user.imageUrl}}" class="avatar">  </li>
+            <br/> email: {{user.email}}
+      </ul>
+    </div>
+
+
+      {{/each}}
+
+  </div>
+</div>
